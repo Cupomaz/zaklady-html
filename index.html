@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Základy HTML</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Příprava na praktickou prověrku</h1>
+      <ul>
+        <li><a href="#textove-upravy">Textové úpravy</a></li>
+        <li><a href="#tabulka">Tabulka</a></li>
+      </ul>
+    </header>
+    <main>
+      <h2 id="textove-upravy">Textové úpravy</h2>
+      <h3>Adresy používané na internetu</h3>
+      <p>
+        <b><abbr title="Internet Protocol">IP</abbr> adresa</b> je jedinečný
+        identifikátor přiřazený každému zařízení připojenému k internetu.
+        Existují dvě verze IP adres - <b>IPv4</b> (např. 192.168.1.1) a
+        <b>IPv6</b> (např. 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+      </p>
+
+      <h3>Seznam významných termínů a zkratek</h3>
+      <dl>
+        <dt><abbr title="Hyper Text Markup Language">HTML</abbr></dt>
+        <dd>Značkovací jazyk používaný pro tvorbu webových stránek</dd>
+        <dt><abbr title="Hyper Text Transfer Protokol">HTTP</abbr></dt>
+        <dd>Protokol pro komunikaci webových serverů</dd>
+        <dt>Validátor</dt>
+        <dd>Program ověřující "správnost" HTML souboru</dd>
+        <dt>Server</dt>
+        <dd>Počítač poskytující nějákou službu</dd>
+      </dl>
+
+      <h2 id="tabulka">Tabulka</h2>
+      <table>
+        <thead>
+          <tr>
+            <td rowspan="2">Nečíslovaný seznam</td>
+            <td colspan="2">Prvky stránky</td>
+            <td rowspan="2">Obrázek (šířka 200 px)</td>
+          </tr>
+          <tr>
+            <td>Značky</td>
+            <td>Entity</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">
+              <ul>
+                <li>IP adresa</li>
+                <li>Jmenná adresa</li>
+                <li>URL</li>
+              </ul>
+            </td>
+            <td>H<sub>2</sub>O</td>
+            <td>&</td>
+            <td rowspan="2">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/7/70/Graduation_%28album%29.jpg"
+                alt="Graduation - Kanye West"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>c = a<sup>2</sup> + b<sup>2</sup></td>
+            <td>&copy;</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Odkaz</td>
+            <td colspan="3"><a href="https://www.w3.org/">www.w3.org</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <p>
+        &copy; <mark>Vojtěch Hrubý</mark>, <b>IT1</b>,
+        <abbr title="Střední škola průmyslová a umělecká">SŠPU</abbr> Opava
+      </p>
+    </footer>
+  </body>
+</html>
